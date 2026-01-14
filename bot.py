@@ -6,14 +6,6 @@ from aiogram.enums import ChatMemberStatus
 TOKEN = "8097504031:AAHd-YXhxyXqYblWf1YH8V0H1M9NGGHWwMM"
 GROUP_ID = -1002048724865  # BU YERGA GURUH ID
 
-import asyncio
-from aiogram import Bot, Dispatcher, types
-from aiogram.filters import Command
-from aiogram.enums import ChatMemberStatus
-
-TOKEN = "SIZNING_BOT_TOKEN"     # BotFather token
-GROUP_ID = -1001234567890       # Guruh ID
-
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
@@ -54,4 +46,5 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
 
