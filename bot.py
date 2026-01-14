@@ -4,7 +4,7 @@ from aiogram.filters import Command
 from aiogram.enums import ChatMemberStatus
 
 TOKEN = "BU_YERGA_TOKEN"
-GROUP_ID = -100XXXXXXXXXX  # BU YERGA GURUH ID
+GROUP_ID = -1002048724865  # BU YERGA GURUH ID
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -50,3 +50,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
