@@ -3,8 +3,16 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 from aiogram.enums import ChatMemberStatus
 
-TOKEN = "BU_YERGA_TOKEN"
+TOKEN = "8097504031:AAHd-YXhxyXqYblWf1YH8V0H1M9NGGHWwMM"
 GROUP_ID = -1002048724865  # BU YERGA GURUH ID
+
+import asyncio
+from aiogram import Bot, Dispatcher, types
+from aiogram.filters import Command
+from aiogram.enums import ChatMemberStatus
+
+TOKEN = "SIZNING_BOT_TOKEN"     # BotFather token
+GROUP_ID = -1001234567890       # Guruh ID
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -38,14 +46,10 @@ async def post_handler(message: types.Message):
 ⏰ Shoshiling!
 #elon #yangilik
 """
-
-    await bot.send_message(
-        GROUP_ID,
-        post,
-        parse_mode="HTML"
-    )
+    await bot.send_message(GROUP_ID, post, parse_mode="HTML")
 
 async def main():
+    print("Bot ishga tushdi 🚀")
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
